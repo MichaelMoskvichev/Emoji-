@@ -9,6 +9,8 @@ import UIKit
 
 class NewEmojiTableViewController: UITableViewController {
 
+    var emoji = Emoji(emoji: "", name: "", description: "", isFavourite: false)
+    
     @IBOutlet weak var emojiTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -20,7 +22,6 @@ class NewEmojiTableViewController: UITableViewController {
        updateSabeButtonState()
     }
     
-    // реализация функцианала кнопки SAVE (горит тогда когда все 3 графы заполнены)
     private func updateSabeButtonState() {
         let emojiText = emojiTextField.text ?? ""
         let nameText = nameTextField.text ?? ""
@@ -34,6 +35,15 @@ class NewEmojiTableViewController: UITableViewController {
        updateSabeButtonState()
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "saveSegue" else { return }
+       
+        let emoji = emojiTextField.text ?? ""
+        let name = nameTextField.text ?? ""
+        let description = descriptionTextField.text ?? ""
+        
+        self.emoji = Emoji(emoji: emoji, name: name, description: description, isFavourite: self.emoji.isFavourite)
+    }
   
 }

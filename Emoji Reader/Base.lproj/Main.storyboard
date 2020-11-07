@@ -182,19 +182,28 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="nmD-3a-t7h">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="jJu-OU-OJH"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" style="done" id="8q8-Eq-aEc"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="jJu-OU-OJH">
+                            <connections>
+                                <segue destination="xcS-qj-zbD" kind="unwind" unwindAction="unwindSegueWithSegue:" id="oGh-Q9-ykd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" style="done" id="8q8-Eq-aEc">
+                            <connections>
+                                <segue destination="xcS-qj-zbD" kind="unwind" identifier="saveSegue" unwindAction="unwindSegueWithSegue:" id="8C6-Xo-yZL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="BBb-SP-XYV" id="zGq-78-25i"/>
-                        <outlet property="emojiTextField" destination="XCh-70-RBL" id="NPq-PJ-baC"/>
+                        <outlet property="emojiTextField" destination="eok-7W-mA9" id="4mu-TY-d58"/>
                         <outlet property="nameTextField" destination="pSh-9G-Q8q" id="S38-zk-4P8"/>
                         <outlet property="saveButton" destination="8q8-Eq-aEc" id="s3L-cZ-E6v"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lw3-1f-Rn6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="xcS-qj-zbD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2740.579710144928" y="92.410714285714278"/>
+            <point key="canvasLocation" x="2833" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Qv-Gt-kJx">
@@ -212,7 +221,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5FF-Ta-W11" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="185.50724637681162" y="90.401785714285708"/>
+            <point key="canvasLocation" x="201" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dv6-Q2-LrP">
@@ -231,7 +240,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7k6-Gp-AnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1830.4347826086957" y="92.410714285714278"/>
+            <point key="canvasLocation" x="1943" y="90"/>
         </scene>
     </scenes>
     <resources>
