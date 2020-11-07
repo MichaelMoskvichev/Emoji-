@@ -73,7 +73,7 @@
                     <navigationItem key="navigationItem" id="wKZ-mM-qSK">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KA1-3H-BWD">
                             <connections>
-                                <segue destination="xr4-XY-jXa" kind="show" id="7qt-Y6-HsP"/>
+                                <segue destination="xr4-XY-jXa" kind="show" id="ljA-VZ-mbp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
