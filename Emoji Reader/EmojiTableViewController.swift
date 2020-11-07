@@ -30,7 +30,7 @@ class EmojiTableViewController: UITableViewController {
     }
 
     @IBAction func unwindSegue(segue: UIStoryboardSegue){
-        guard segue.identifier == "seveSegue" else { return }
+        guard segue.identifier == "saveSegue" else { return }
         let sourceVC = segue.source as! NewEmojiTableViewController
         let emoji = sourceVC.emoji
         
