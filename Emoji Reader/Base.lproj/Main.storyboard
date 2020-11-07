@@ -62,7 +62,7 @@
                                     <outlet property="descriptionLabel" destination="bbc-yX-8zM" id="Jp5-Vj-toG"/>
                                     <outlet property="emojiLabel" destination="jHi-sr-X0k" id="9Pa-Jn-AR7"/>
                                     <outlet property="nameLabel" destination="Fci-Em-uFh" id="Dkt-5I-5PO"/>
-                                    <segue destination="xr4-XY-jXa" kind="show" identifier="editEmoji" id="P5O-9w-5JC"/>
+                                    <segue destination="xr4-XY-jXa" kind="show" identifier="editEmoji" id="VDT-RR-hWN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -245,7 +245,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="P5O-9w-5JC"/>
+        <segue reference="VDT-RR-hWN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
