@@ -20,10 +20,10 @@ class NewEmojiTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI ()
-        updateSabeButtonState()
+        updateSaveButtonState()
     }
     
-    private func updateSabeButtonState() {
+    private func updateSaveButtonState() {
         let emojiText = emojiTextField.text ?? ""
         let nameText = nameTextField.text ?? ""
         let descriptionText = descriptionTextField.text ?? ""
@@ -38,7 +38,7 @@ class NewEmojiTableViewController: UITableViewController {
     }
     
     @IBAction func textChanged(_ sender: UITextField) {
-        updateSabeButtonState()
+        updateSaveButtonState()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
